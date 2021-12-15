@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Book Storage</title>
+  <link rel="icon" href="book.png">
+  <link rel="stylesheet" href="main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+<header>
+    <nav class="container">
+        <div class="logo">
+            <img src="book.png" alt="Logo Image">
+            <h1>
+              <a href="index.html">Book Storage</a>
+            </h1>
+        </div>
+        <div class="mode">
+            <button id="dark-mode-toggle" class="dark-mode-toggle">
+                <svg width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496"><path fill="currentColor" d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z" transform="translate(-8 -8)"/></svg>
+            </button>
+        </div>
+    </nav>
+</header>
+<!-- <input class="form-control" id="myInput" type="text" placeholder="Search..">-->
+<section>
+    <div class="container search">
+        <form>
+            <input class="form-control" id="myInput" type="text" placeholder="Search by title , author, genres , date...">
+        </form>
+    </div>
+</section>
+<section class="section-table">
+    <div class="container">
+
+        <!--for demo wrap-->
+        <div class="tbl-header">
+          <table cellpadding="0" cellspacing="0" border="0">
+            <thead>
+              <tr>
+                <th>Book Title</th>
+                <th>Author</th>
+                <th>Genre</th>
+                <th>Publishing</th>
+                <th>Date</th>
+                <th>Image</th>
+              </tr>
+            </thead>
+          </table>
+        </div>
+        <div class="tbl-content">
+          <table cellpadding="0" cellspacing="0" border="0">
+            <tbody id="myTable">
+            </tbody>
+          </table>
+        </div>
+    </div>
+</section>
+  
+<section>
+    <div class="container copyright">
+        <p>© 2021 <a href="https://github.com/LukaJioshvili20">Luka Jioshvili</a>. All Rights Reserved.</p>
+    </div>
+</section>
+<script src="main.js"></script>
+<script src="bookStorage.js"></script>
+</body>
+</html>
