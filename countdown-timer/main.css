@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("https://wallpaperaccess.com/full/1362328.jpg");
+    background-size: cover;
+    background-position: center center;
+    min-height: 100vh;
+    font-family: 'Readex Pro', sans-serif;
+    background-color: #333;
+    color: #fff;
+    z-index: 1;
+}
+
+.countdown-container{
+    display: flex;
+}
+
+h1 {
+    text-align: center;
+    font-weight: normal;
+    font-size: 4rem;
+    margin-top: 5rem;
+}
+
+.countdown-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.great {
+    font-weight: bold;
+    font-size: 6rem;
+    line-height: 1;
+    margin: 1rem 2rem;
+}
+
+.countdown-element {
+    text-align: center;
+}
+
+.countdown-element span {
+    font-size: 1.3rem;
+}
