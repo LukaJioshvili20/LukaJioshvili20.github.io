@@ -1,3 +1,6 @@
+'use strict';
+
+
 const quizData = [
     {
         question: "What is the most used programming language in 2019?",

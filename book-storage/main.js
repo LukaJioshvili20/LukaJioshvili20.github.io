@@ -1,4 +1,7 @@
+'use strict';
 
+
+// Luka Jioshvili Project for Web1 presentation
 // check for saved 'darkMode' in localStorage
 let darkMode = localStorage.getItem('darkMode'); 
 
