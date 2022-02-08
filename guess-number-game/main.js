@@ -1,7 +1,7 @@
 'use strict';
 
 let secretNumber = Math.trunc(Math.random() * 20) + 1;
-let score = document.getElementById("levels").value;
+let score = 10;
 let highscore = 0;
 
 const displayMessage = function (message) {
