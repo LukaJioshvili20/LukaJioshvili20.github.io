@@ -131,6 +131,9 @@ nav a{
 .card:nth-child(9):before {
   background-image: url(/navigation-images/to-do.png);
 }
+.card:nth-child(10):before {
+  background-image: url(/navigation-images/bookmarking-application.png);
+}
 .content {
   position: relative;
   display: flex;

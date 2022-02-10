@@ -44,6 +44,11 @@ const projects = [
         'description':'Animated application using local storage',
         'link':'https://lukajioshvili20.github.io/to-do/'
     },
+    {
+        'title': 'Bookmarker',
+        'description':'Bookmarker using localstorage , bootstrap and Jquery.',
+        'link':'https://lukajioshvili20.github.io/bookmarking-application/'
+    },
     /* 
      {
         'title': '',
