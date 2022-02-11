@@ -49,6 +49,11 @@ const projects = [
         'description':'Bookmarker using localstorage , bootstrap and Jquery.',
         'link':'https://lukajioshvili20.github.io/bookmarking-application/'
     },
+    {
+        'title': 'Workout tracker',
+        'description':'Leaflet and Geolocation with OOP sturcture.',
+        'link':'https://lukajioshvili20.github.io/workout-tracker/'
+    },
     /* 
      {
         'title': '',

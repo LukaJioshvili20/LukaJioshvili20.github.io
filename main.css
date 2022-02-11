@@ -134,6 +134,9 @@ nav a{
 .card:nth-child(10):before {
   background-image: url(/navigation-images/bookmarking-application.png);
 }
+.card:nth-child(11):before {
+  background-image: url(/navigation-images/workout-tracker.png);
+}
 .content {
   position: relative;
   display: flex;
