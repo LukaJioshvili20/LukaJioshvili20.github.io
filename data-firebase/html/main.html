@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-firestore.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-9ZfPnbegQSumzaE7mks2IYgHoayLtuto3AS6ieArECeaR8nCfliJVuLh/GaQ1gyM"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Modal PopUp</title>
+  </head>
+  <body>
+    <div class="modal-wrap display-none">
+      <div class="modal">
+        <div class="modal-content">
+          <div class="icon">
+            <i class="fad fa-phone-alt"></i>
+          </div>
+          <h2>Add your phone number</h2>
+          <p>Make it easier for your friends to get in touch with you</p>
+          <input
+            autocomplete="off"
+            class="phone-number"
+            type="search"
+            name=""
+            id="phone-number"
+            placeholder="Enter your phone number"
+          />
+          <p class="phone-number-error error display-none">Please enter a valid number!</p>
+          <input autocomplete="off" class="email" type="search" name="" id="email" placeholder="Enter your email" />
+          <p class="email-error error display-none">Please enter a valid email address!</p>
+          <div class="action">
+            <button class="cancel">Not now</button>
+            <button class="accept">Add your info</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-button">
+      <button class="modal-btn">Open Modal</button>
+    </div>
+    <script src="../js/firebase.js"></script>
+    <script src="../js/app.js"></script>
+  </body>
+</html>
