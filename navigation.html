@@ -11,26 +11,62 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- Scripts -->
+    <link href="https://unpkg.com/tailwindcss@1.9.6/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://kit-pro.fontawesome.com/releases/v5.15.1/css/pro.min.css"  rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
-    <header>
-        <nav class="container">
-            <div class="logo">
-                <h1>
-                    Navigate Through My projects
-                </h1>
-            </div>
-            <div class="mode">
-                <a href="https://github.com/LukaJioshvili20/LukaJioshvili20.github.io" class="src">Source code</a>
-                <button id="dark-mode-toggle" class="dark-mode-toggle">
-                    <svg width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496"><path fill="currentColor" d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z" transform="translate(-8 -8)"/></svg>
-                </button>
-            </div>
-        </nav>
+    <header class="text-gray-600 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <nav class="flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto">
+            <a href="https://github.com/LukaJioshvili20/LukaJioshvili20.github.io" class="wobble mr-5 hover:text-gray-900" data-animation="sheen">&lt;/Source Code></a>
+          </nav>
+          <a class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-gray-900 lg:items-center lg:justify-center mb-4 md:mb-0">
+            <img src="websiteIcon.png" width="40"  height="40" alt="Logo">
+            <!-- <span class="ml-3 text-xl" class="wobble" data-animation="sheen" >Luka Jioshvili</span> -->
+            <h1 class="wobble ml-3 text-xl" data-animation="sheen">Luka Jioshvili</h1>
+          </a>
+          <div class="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">
+            <a href="https://meathookz.web.app" class="wobble font-bold text-white bg-yellow-500 py-2 px-4 rounded-md" data-animation="sheen">Portfolio Website</a>
+          </div>
+        </div>
     </header>
-    <main class="page-content">       
-    </main>
+    <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-wrap w-full mb-20">
+            <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+              <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Vanilla Javascript Projects</h1>
+              <div class="h-1 w-20 bg-yellow-500 rounded"></div>
+            </div>
+            <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">You can view the <a href="https://github.com/LukaJioshvili20/LukaJioshvili20.github.io" class="font-bold hover:underline">&lt;/Source Code></a> of following projects on my <a href="https://github.com/LukaJioshvili20" class="font-bold hover:underline">GitHub</a> account, they are all <span class="font-bold">public</span> and feel to free to interact with them.</p>
+          </div>
+          <div class="flex flex-wrap -m-4 page-content">
+            
+          </div>
+        </div>
+      </section>
+      <footer class="text-gray-600 body-font">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+          <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+            <img src="websiteIcon.png" width="40"  height="40" alt="Logo">
+            <!-- <span class="ml-3 text-xl" class="wobble" data-animation="sheen" >Luka Jioshvili</span> -->
+            <h1 class="ml-3 text-xl" >Luka Jioshvili</h1>
+          </a>
+          <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2022 Copyright —
+            <a href="https://github.com/LukaJioshvili20" class="text-gray-600 ml-1"  target="_blank">@LukaJioshvili20</a>
+          </p>
+          <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+            <a href="https://www.linkedin.com/in/luka-jioshvili-374ab9233/" class="ml-3 text-gray-500">
+              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                <circle cx="4" cy="4" r="2" stroke="none"></circle>
+              </svg>
+            </a>
+          </span>
+        </div>
+      </footer>
     <script src="main.js"></script>
     <script src="projects.js"></script>
 </body>

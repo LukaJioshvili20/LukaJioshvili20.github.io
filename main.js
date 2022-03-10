@@ -1,42 +1,41 @@
-// check for saved 'darkMode' in localStorage
-let darkMode = localStorage.getItem('darkMode'); 
+// Text animation 
+var wobbleElements = document.querySelectorAll('.wobble');
 
-const darkModeToggle = document.querySelector('#dark-mode-toggle');
-
-const enableDarkMode = () => {
-  // 1. Add the class to the body
-  document.body.classList.add('darkmode');
-  // 2. Update darkMode in localStorage
-  localStorage.setItem('darkMode', 'enabled');
-}
-
-const disableDarkMode = () => {
-  // 1. Remove the class from the body
-  document.body.classList.remove('darkmode');
-  // 2. Update darkMode in localStorage 
-  localStorage.setItem('darkMode', null);
-}
-
-
- 
-// If the user already visited and enabled darkMode
-// start things off with it on
-if (darkMode === 'enabled') {
-  enableDarkMode();
-}
-
-// When someone clicks the button
-darkModeToggle.addEventListener('click', () => {
-  // get their darkMode setting
-  darkMode = localStorage.getItem('darkMode'); 
-  
-  // if it not current enabled, enable it
-  if (darkMode !== 'enabled') {
-    enableDarkMode();
-  // if it has been enabled, turn it off  
-  } else {  
-    disableDarkMode(); 
-  }
+wobbleElements.forEach(function(el){
+	el.addEventListener('mouseover', function(){
+		
+		if(!el.classList.contains('animating') && !el.classList.contains('mouseover')){
+		
+			el.classList.add('animating','mouseover');
+		
+			var letters = el.innerText.split('');
+			
+			setTimeout(function(){ el.classList.remove('animating'); }, (letters.length + 1) * 50);
+			
+			var animationName = el.dataset.animation;
+			if(!animationName){ animationName = "jump"; }
+		
+			el.innerText = '';
+		
+			letters.forEach(function(letter){
+				if(letter == " "){
+					letter = "&nbsp;";
+				}
+				el.innerHTML += '<span class="letter">'+letter+'</span>';
+			});
+			
+			var letterElements = el.querySelectorAll('.letter');
+			letterElements.forEach(function(letter, i){
+				setTimeout(function(){
+					letter.classList.add(animationName);
+				}, 50 * i);
+			});
+			
+		}
+		
+	});
+	
+	el.addEventListener('mouseout', function(){				
+		el.classList.remove('mouseover');
+	});
 });
-
- 
