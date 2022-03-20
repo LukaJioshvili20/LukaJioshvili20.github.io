@@ -96,7 +96,7 @@ function buildCards(data){
 
     for (let i = 0; i < data.length; i++){
         let row = `
-         <div class="xl:w-1/4 md:w-1/2 p-4">
+         <div class="xl:w-1/4 md:w-1/2 w-full p-4">
             <a href="${data[i].link}">
             <div class="card bg-gray-100 p-6 rounded-lg">
                 <img class="h-40 rounded w-full object-cover object-center mb-6" src="${data[i].image}" alt="content">
